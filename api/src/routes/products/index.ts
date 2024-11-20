@@ -5,15 +5,15 @@ import {
   createProduct,
   updateProduct,
   deleteProduct,
-} from "./productsControllers";
-import { validateData } from "../../middlewares/validationMiddleware";
+} from "./productsControllers.js";
+import { validateData } from "../../middlewares/validationMiddleware.js";
 import { verifySeller, verifyToken } from "../../middlewares/authMiddleware.js";
 
 import {
   createProductSchema,
   updateProductSchema,
   deleteProductSchema,
-} from "../../db/productsSchema";
+} from "../../db/productsSchema.js";
 
 // type ProductType = z.infer<typeof createProductSchema>
 
